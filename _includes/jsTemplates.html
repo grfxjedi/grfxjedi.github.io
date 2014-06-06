@@ -1,0 +1,122 @@
+<script id="artist_view" type="text/template"></>
+	<div class="artist clearfix">
+		<% if (image){ %>
+			<div class="photo">
+			<a href="#moreInfo" data-toggle="modal"><img src="<%= image.medium.url %>" title="<%= name %>" alt="<%= name %>"/></a>
+			</div>
+		<% } %>
+		<h3 class="name"><%= name %></h3>
+		<div class="bio"><%= short_bio %></div>
+		<div class="events">
+		<% if (parseInt(event_count) > 0){ %>
+			<%= event_count %> upcoming event date<% if (parseInt(event_count) > 1){ %>s<% } %>
+		<% } else { %>
+			Not currently on tour
+		<% } %>
+		</div>
+		
+		<a href="#moreInfo" role="button" class="btn btn-primary bioButton" data-toggle="modal">Artist Bio</a>
+		<div id="moreInfo" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3 id="myModalLabel"><%= name %></h3>
+			</div>
+			<div class="modal-body bio">
+				<div class="photo"></div>
+				<span></span>
+			</div>
+			<div class="modal-footer">
+				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script id="calendar_view" type="text/template"></>
+	<li id="<%= id %>"><%= eventDate %> - <%= city %>, <%= region %> <%= country %>
+		<h4><a href="#eventModal<%= id %>" data-toggle="modal"><%= title %></a></h4>
+	</li>
+	<div id="eventModal<%= id %>" class="eventModal modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3><%= title %></h3>
+			<h4></h4>
+		</div>
+		<div class="modal-body"></div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+</script>
+
+<script id="venue_view" type="text/template"></>
+	<% if (images && images.image.length){ %>
+		<div id="myCarousel<%= id %>" class="carousel slide">
+			<ol class="carousel-indicators">
+			<% for ( i = 0; i < images.image.length; i++ ) { %>
+				<li data-target="#myCarousel<%= id %>" data-slide-to="<%= i %>" class="<% if (i === 0){ %>active<% } %>"></li>
+			<% } %>
+			</ol>
+			<!-- Carousel items -->
+			<div class="carousel-inner">
+			<% for ( i = 0; i < images.image.length; i++ ) { %>
+				<div class="item<% if (i === 0){ %> active<% } %>">
+					<img src="<%= images.image[i].blackborder500.url %>" alt="" />
+				</div>
+			<% } %>
+			</div>
+			<!-- Carousel nav -->
+			<a class="carousel-control left" href="#myCarousel<%= id %>" data-slide="prev">&lsaquo;</a>
+			<a class="carousel-control right" href="#myCarousel<%= id %>" data-slide="next">&rsaquo;</a>
+		</div>
+	<% } %>
+
+	<div class="address">
+		<div class="street"><%= address %></div>
+		<span class="city"><%= city %></span>,
+		<span class="state"><%= region %></span>
+		<span class="postal"><%= postal_code %></span>
+	</div>
+	<div class="info"><%= description %></div>
+	<div class="links">
+	<% if (links){ %>
+		<% if (links.link.length){ %>
+			<% for ( i = 0; i < links.link.length; i++ ) { %>
+				<a href="<%= links.link[i].url %>" title="<%= links.link[i].description %>"><%= links.link[i].type %></a>
+			<% } %>
+		<% } else { %>
+			<a href="<%= links.link.url %>" title="<%= links.link.description %>"><%= links.link.type %></a>
+		<% } %>
+	<% } %>
+	</div>
+</script>
+
+<script id="flyout_view" type="text/template"></>
+	<div class="flyout">
+		<h5 class="title"><%= title %> - <%= start_time %></h5>
+		<div class="performers">
+		<% if (performers.performer.length){ %>
+			<% for ( i = 0; i < performers.performer.length; i++ ) { %>
+				<div class="performer"><%= performers.performer[i].name %></div>
+			<% } %>
+		<% } %>
+		</div>
+		<h5 class="venue"><%= venue_name %></h5>
+		<div class="address">
+		<%= address %><br/>
+		<%= city %>, <%= region_abbr %> <%= postal_code %>
+		</div>
+		<div class="links">
+		<% if (links){ %>
+			<% if (links.link.length){ %>
+				<% for ( i = 0; i < links.link.length; i++ ) { %>
+					<a href="<%= links.link[i].url %>" title="<%= links.link[i].description %>"><%= links.link[i].type %></a>
+				<% } %>
+			<% } else { %>
+				<a href="<%= links.link.url %>" title="<%= links.link.description %>"><%= links.link.type %></a>
+			<% } %>
+		<% } %>
+		</div>
+	</div>
+</script>
+

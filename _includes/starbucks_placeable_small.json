@@ -1,0 +1,326 @@
+[
+  {
+    "name": "444 S. Flower - D.T. L.A.",
+    "clientRefId": "528534d47c7582d2028af010",
+    "locationId": "5291",
+    "description": "",
+    "id": "528534ef7c7582da028af020",
+    "address": {
+      "street": "444 South Flower Street, Suite #170",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postal": "90071",
+      "country": ""
+    },
+    "geocode": {
+      "lat": 34.0513000488281,
+      "long": -118.25513458252,
+      "accuracy": "HIGH"
+    },
+    "phone": {
+      "main": "213-622-4493",
+      "mobile": "",
+      "alternate": "",
+      "fax": ""
+    },
+    "urls": {
+      "facebook": "",
+      "google": "",
+      "bing": "",
+      "yahoo": "",
+      "yelp": "",
+      "local": ""
+    },
+    "photos": {},
+    "userFields": {
+      "Street Line 2": {
+        "_type": "String",
+        "value": "Suite #170",
+        "header": "Street Line 2"
+      },
+      "Location": {
+        "_type": "String",
+        "value": "444 South Flower Street, Suite #170\nLos Angeles, CA 90071\n(34.051303, -118.25516)",
+        "header": "Location"
+      },
+      "Features - Products": {
+        "_type": "String",
+        "value": "Lunch",
+        "header": "Features - Products"
+      },
+      "Features - Service": {
+        "_type": "String",
+        "value": "Starbucks Card Mobile, Wireless Hotspot",
+        "header": "Features - Service"
+      },
+      "Name": {
+        "_type": "String",
+        "value": "444 S. Flower - D.T. L.A.",
+        "header": "Name"
+      },
+      "Facility ID": {
+        "_type": "String",
+        "value": "15990",
+        "header": "Facility ID"
+      },
+      "Latitude": {
+        "_type": "String",
+        "value": "34.051303",
+        "header": "Latitude"
+      },
+      "Country": {
+        "_type": "String",
+        "value": "US",
+        "header": "Country"
+      },
+      "Phone Number": {
+        "_type": "String",
+        "value": "213-622-4493",
+        "header": "Phone Number"
+      },
+      "Ownership Type": {
+        "_type": "String",
+        "value": "Company Owned",
+        "header": "Ownership Type"
+      },
+      "Longitude": {
+        "_type": "String",
+        "value": "-118.25516",
+        "header": "Longitude"
+      },
+      "Venue Type": {
+        "_type": "String",
+        "value": "Unknown",
+        "header": "Venue Type"
+      },
+      "Coordinates": {
+        "_type": "String",
+        "value": "(34.051303, -118.25516)",
+        "header": "Coordinates"
+      },
+      "Food Region": {
+        "_type": "String",
+        "value": "9999",
+        "header": "Food Region"
+      },
+      "Street Address": {
+        "_type": "String",
+        "value": "444 South Flower Street, Suite #170",
+        "header": "Street Address"
+      },
+      "﻿Brand": {
+        "_type": "String",
+        "value": "Starbucks",
+        "header": "﻿Brand"
+      },
+      "Features - Stations": {
+        "_type": "String",
+        "value": "",
+        "header": "Features - Stations"
+      },
+      "City": {
+        "_type": "String",
+        "value": "Los Angeles",
+        "header": "City"
+      },
+      "Zip": {
+        "_type": "String",
+        "value": "90071",
+        "header": "Zip"
+      },
+      "numericId": {
+        "_type": "transformation",
+        "value": "79",
+        "header": "numericId"
+      },
+      "Street Line 1": {
+        "_type": "String",
+        "value": "444 South Flower Street",
+        "header": "Street Line 1"
+      },
+      "State": {
+        "_type": "String",
+        "value": "CA",
+        "header": "State"
+      },
+      "Insert Date": {
+        "_type": "String",
+        "value": "06/22/2012 06:49:18 PM",
+        "header": "Insert Date"
+      },
+      "Store Number": {
+        "_type": "String",
+        "value": "5291",
+        "header": "Store Number"
+      }
+    },
+    "hoop": "",
+    "paymentTypes": "",
+    "languages": "",
+    "services1": "",
+    "services2": "",
+    "keywords": ""
+  },
+  {
+    "name": "9th & Santee, Los Angeles",
+    "clientRefId": "528534d47c7582d2028af010",
+    "locationId": "6608",
+    "description": "",
+    "id": "528534ef7c7582da028af017",
+    "address": {
+      "street": "300 E. 9th Street",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postal": "90015-1802",
+      "country": ""
+    },
+    "geocode": {
+      "lat": 34.0396842956543,
+      "long": -118.253448486328,
+      "accuracy": "HIGH"
+    },
+    "phone": {
+      "main": "213-489-0913",
+      "mobile": "",
+      "alternate": "",
+      "fax": ""
+    },
+    "urls": {
+      "facebook": "",
+      "google": "",
+      "bing": "",
+      "yahoo": "",
+      "yelp": "",
+      "local": ""
+    },
+    "photos": {},
+    "userFields": {
+      "Street Line 2": {
+        "_type": "String",
+        "value": "",
+        "header": "Street Line 2"
+      },
+      "Location": {
+        "_type": "String",
+        "value": "300 E. 9th Street\nLos Angeles, CA 90015-1802\n(34.039857, -118.253353)",
+        "header": "Location"
+      },
+      "Features - Products": {
+        "_type": "String",
+        "value": "Lunch, Oven-warmed Food",
+        "header": "Features - Products"
+      },
+      "Features - Service": {
+        "_type": "String",
+        "value": "Starbucks Card Mobile, Wireless Hotspot",
+        "header": "Features - Service"
+      },
+      "Name": {
+        "_type": "String",
+        "value": "9th & Santee, Los Angeles",
+        "header": "Name"
+      },
+      "Facility ID": {
+        "_type": "String",
+        "value": "11795",
+        "header": "Facility ID"
+      },
+      "Latitude": {
+        "_type": "String",
+        "value": "34.039857",
+        "header": "Latitude"
+      },
+      "Country": {
+        "_type": "String",
+        "value": "US",
+        "header": "Country"
+      },
+      "Phone Number": {
+        "_type": "String",
+        "value": "213-489-0913",
+        "header": "Phone Number"
+      },
+      "Ownership Type": {
+        "_type": "String",
+        "value": "Company Owned",
+        "header": "Ownership Type"
+      },
+      "Longitude": {
+        "_type": "String",
+        "value": "-118.253353",
+        "header": "Longitude"
+      },
+      "Venue Type": {
+        "_type": "String",
+        "value": "Unknown",
+        "header": "Venue Type"
+      },
+      "Coordinates": {
+        "_type": "String",
+        "value": "(34.039857, -118.253353)",
+        "header": "Coordinates"
+      },
+      "Food Region": {
+        "_type": "String",
+        "value": "9999",
+        "header": "Food Region"
+      },
+      "Street Address": {
+        "_type": "String",
+        "value": "300 E. 9th Street",
+        "header": "Street Address"
+      },
+      "﻿Brand": {
+        "_type": "String",
+        "value": "Starbucks",
+        "header": "﻿Brand"
+      },
+      "Features - Stations": {
+        "_type": "String",
+        "value": "",
+        "header": "Features - Stations"
+      },
+      "City": {
+        "_type": "String",
+        "value": "Los Angeles",
+        "header": "City"
+      },
+      "Zip": {
+        "_type": "String",
+        "value": "90015-1802",
+        "header": "Zip"
+      },
+      "numericId": {
+        "_type": "transformation",
+        "value": "78",
+        "header": "numericId"
+      },
+      "Street Line 1": {
+        "_type": "String",
+        "value": "300 E. 9th Street",
+        "header": "Street Line 1"
+      },
+      "State": {
+        "_type": "String",
+        "value": "CA",
+        "header": "State"
+      },
+      "Insert Date": {
+        "_type": "String",
+        "value": "06/22/2012 06:49:18 PM",
+        "header": "Insert Date"
+      },
+      "Store Number": {
+        "_type": "String",
+        "value": "6608",
+        "header": "Store Number"
+      }
+    },
+    "hoop": "",
+    "paymentTypes": "",
+    "languages": "",
+    "services1": "",
+    "services2": "",
+    "keywords": ""
+  }
+]

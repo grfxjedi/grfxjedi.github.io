@@ -1,0 +1,295 @@
+/*!
+ * Bootstrap v2.3.2
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+// CSS Reset
+@import "reset.less";
+
+// Grid system and page structure
+@import "scaffolding.less";
+@import "grid.less";
+@import "layouts.less";
+
+// Base CSS
+@import "type.less";
+//@import "code.less";
+@import "forms.less";
+//@import "tables.less";
+
+// Components: common
+@import "sprites.less";
+@import "dropdowns.less";
+//@import "wells.less";
+@import "component-animations.less";
+@import "close.less";
+
+// Components: Buttons & Alerts
+@import "buttons.less";
+@import "button-groups.less";
+@import "alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+// Components: Nav
+@import "navs.less";
+@import "navbar.less";
+//@import "breadcrumbs.less";
+//@import "pagination.less";
+//@import "pager.less";
+
+// Components: Popovers
+@import "modals.less";
+//@import "tooltip.less";
+//@import "popovers.less";
+
+// Components: Misc
+@import "thumbnails.less";
+//@import "media.less";
+//@import "labels-badges.less";
+//@import "progress-bars.less";
+//@import "accordion.less";
+@import "carousel.less";
+//@import "hero-unit.less";
+
+// RESPONSIVE CLASSES
+// ------------------
+
+@import "responsive-utilities.less";
+
+
+// MEDIA QUERIES
+// ------------------
+
+// Large desktops
+@import "responsive-1200px-min.less";
+
+// Tablets to regular desktops
+@import "responsive-768px-979px.less";
+
+// Phones to portrait tablets and narrow desktops
+@import "responsive-767px-max.less";
+
+
+// RESPONSIVE NAVBAR
+// ------------------
+
+// From 979px and below, show a button to toggle navbar contents
+@import "responsive-navbar.less";
+
+
+// Utility classes
+@import "utilities.less"; // Has to be last to override when necessary
+
+
+
+
+/*!
+* Begin Override Section
+* Custom 
+*/
+
+body {
+	#gradient > .vertical(@blueGray, @bodyBackground);
+	background-color: @bodyBackground;
+}
+
+#header {
+	.brand {
+		padding: 5px 20px;
+		color: @blueGray;
+		font-weight: bold;
+	}
+	.icon {
+		height: 24px;
+		display: inline-block;
+		margin: 3px;
+		vertical-align: text-top;
+		background-position: 0px 0px;
+		&.icon-world {
+			background-image: url("../img/glyphicons_340_globe.png");
+			width: 24px;
+		}
+		&.icon-tunes {
+			background-image: url("../img/glyphicons_159_playlist.png");
+			width: 29px;
+		}
+	}
+	.nav-collapse.in .btn-group,
+	.input {
+		margin: 0px;
+	}
+}
+
+#content {
+	.span7 {
+		position:relative;
+	}
+	min-height: 360px;
+	#spinner,
+	#displayMap {
+		width: 100%;
+		height: 620px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		background-color: #ccc;
+		box-shadow: 3px 3px 5px 1px #999999;
+		img {
+			max-width: inherit;
+		}
+		.flyout {
+			min-width: 300px;
+			min-height: 200px;
+			.links {
+				margin-top: 10px;
+				font-size: 14px;
+				a {
+					display: block;
+					font-weight: bold;
+				}
+			}
+			.venue {
+				margin-bottom: 0px;
+			}
+			.performers {
+				font-size: 12px;
+			}
+		}
+	}
+	#spinner {
+		position: absolute;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+		display: none;
+		z-index: 0;
+	}
+	#spinner.wait {
+		display: block;
+		z-index: 5;
+	}
+	
+	.alert {
+		display: none;
+		&.warning {
+			display: block;
+		}
+	}
+	#info,
+	#calendar {
+		width: 100%;
+		min-height: 120px;
+		margin-bottom: 20px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		background-color: #eee;
+		box-shadow: 3px 3px 5px 1px #999999 inset;
+		h3 {
+			margin-top: 0px;
+			font-size: 18px;
+			line-height: 24px;
+		}
+		h4 {
+			margin-top: 0px;
+			font-size: 12px;
+			line-height: 14px;
+		}
+		.artist,
+		.dates {
+			padding: 10px;
+			.photo {
+				width: 130px;
+				float: right;
+				margin-left: 10px;
+			}
+		}
+		.events {
+			margin: 20px 0px;
+		}
+		#moreInfo {
+			.modal-body {
+				max-height: 560px;
+			}
+			.photo {
+				float: none;
+				width: 530px;
+				margin-left: 0px;
+				text-align: center;
+			}
+		}
+		.eventModal {
+			.modal-body {
+				max-height: 560px;
+			}
+			.carousel {
+				width: 530px;
+				.carousel-inner .item {
+					background-color: #000;
+					min-height: 500px;
+					img {
+						margin-left: 15px;
+					}
+				}
+			}
+			.address {
+				margin-bottom: 10px;
+			}
+			.info {
+				font-size: 12px;
+			}
+			.links {
+				margin-top: 10px;
+				font-size: 14px;
+				a {
+					display: block;
+					font-weight: bold;
+				}
+			}
+			.photos {
+				width: 130px;
+				float: right;
+				margin-left: 10px;
+				display: none;
+			}
+		}
+		ul {
+			max-height: 375px;
+			overflow: auto;
+		}
+	}
+}
+
+#footer {
+	font-size: 12px;
+	margin-top: 20px;
+	.brand {
+		font-size: 12px;
+	}
+	.brand:last-child {
+		text-align: right;
+	}
+	#debug {
+		display: none;
+		font-size: 9px;
+	}
+}
+
+
+
+.dropdown-backdrop{
+    position: static;
+}
+
+.eventful-small {
+	position: relative    !important;
+	width: 100px          !important;
+	font-size: 11px       !important;
+	line-height: 11px     !important;
+	text-align: center;
+}
